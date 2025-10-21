@@ -2,7 +2,7 @@ import math
 
 # Q1: Calculate the area of a circle
 def area_of_circle(radius) :
-    area_of_circle = (math.pi) * (radius ** 2)
+    area_of_circle = (math.pi) * (radius**2)
 
     return round(area_of_circle , 2)
 
@@ -33,7 +33,7 @@ def inverted_pyramid(n) :
         for i in range(n) :
             for k in range(i) :
                 result += " "
-            for j in range(2 * n - 1 - 2 * i) :
+            for j in range((2 * n) - (2 * i) - 1) :
                 result += "*"
             result += "\n"
         result = result.rstrip()
